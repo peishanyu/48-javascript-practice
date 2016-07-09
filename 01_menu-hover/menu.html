@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<style type='text/css'>  
+  .menu {
+    border:1px solid #666; 
+    background-color: #CCC; 
+    margin-top: 5px; 
+    width: 150px;
+    text-align:center;
+  } 
+
+  .msglayer {
+    display:none; 
+    color: #FF0000;
+    border:1px solid #FF0000;
+    width: 300px;
+  }  
+</style>  
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js'></script>  
+<script type='text/javascript'>
+$(".menu").hover(
+
+  function(){
+    $(this).css("background-color", "#eee");
+    $(".msglayer").text("This is "+$(this).text());
+    $(".msglayer").css("display", "block");
+  },
+
+  function(){
+    $(this).css("background-color", "#ccc");
+    $(".msglayer").css("display", "none");
+  });
+
+$("#m1").hover(
+  function(){
+    document.getElementById("message").innerHTML = "This is " + m1.innerHTML;
+  }
+  );
+
+
+  $("#m2").hover(
+  function(){
+    document.getElementById("message").innerHTML = "This is " + m2.innerHTML;
+  }
+  );
+
+  $("#m3").hover(
+  function(){
+    document.getElementById("message").innerHTML = "This is " + m3.innerHTML;
+  }
+  );
+
+</script>  
+
+</head><body>  
+<div id="m1" class="menu">Menu-1</div>  
+<div id="m2" class="menu">Menu-2</div>  
+<div id="m3" class="menu">Menu-3</div>  
+<hr/>  
+<div id="message" class="msglayer"></div>  
+</body>  
+</html>  

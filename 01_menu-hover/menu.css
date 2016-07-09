@@ -1,0 +1,14 @@
+.menu {
+  border: 1px solid #666666; 
+  background-color: #CCCCCC; 
+  margin-top: 5px; 
+  width: 150px;
+  text-align:center;
+}
+
+.msglayer { 
+  display:none;
+  color: #FF0000;
+  border:1px solid #FF0000;
+  width: 300px;
+}
